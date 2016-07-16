@@ -57,17 +57,5 @@ WIFI_DRIVER_FW_PATH_PARAM := "/sys/module/bcmdhd/parameters/firmware_path"
 WIFI_DRIVER_FW_PATH_STA := "/system/etc/firmware/fw_bcmdhd.bin"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
-# BlissPop Config Flags
-BLISSIFY := true
-BLISS_O3 := true
-BLISS_STRICT := true
-BLISS_GRAPHITE := true
-BLISS_KRAIT := true
-Bliss_Build_Block:=1
-TARGET_TC_ROM :=4.9-linaro
-TARGET_TC_KERNEL :=4.9-linaro
-TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
-
 # inherit from the proprietary version
 -include vendor/lge/ls990/BoardConfigVendor.mk
